@@ -1,14 +1,21 @@
 import React from 'react';
+import './App.css';
 import TodoList from './TodoList';
 import Counter from './Counter';
-import Border from './Border';
 
 function App(){
   return (
-      <Border color="blue">
-        <Counter />
+    <div className="wrapper">
+      <header>
+        <h1>Things! {'{To-do}'}</h1>
+      </header>
+      <main>
         <TodoList />
-      </Border>
+      </main>
+      <footer>
+        <Counter />
+      </footer>
+    </div>
   )
 }
 

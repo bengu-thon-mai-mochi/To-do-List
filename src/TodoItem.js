@@ -32,10 +32,15 @@ function TodoItem(props){
                     ) : (
                     <li className='todo-item-container'>
                         <h4 className={isChecked ? 'checked' : ''} > {description} / {deadline.toString()} </h4> 
-                        <input type="button" className="list-item-button" value="Edit" onClick={changeEditingStatus} />
-                        <button className="list-item-button" onClick={() => deleteTodo(id)}>Delete!</button>   
-                        <label>Check</label>
-                        <input type="checkbox" id="check" checked={isChecked} onChange={todoItemChecked}/>
+                
+                        <div className="todo-edit-button-container">
+                            <input type="button" className="list-item-button" value="Edit" onClick={changeEditingStatus} />
+                            <button className="list-item-button" onClick={() => deleteTodo(id)}>Delete!</button>   
+                            <div className="check-button-wrapper">
+                                <label>Done!</label>
+                                <input type="checkbox" id="check" checked={isChecked} onChange={todoItemChecked}/>
+                            </div>
+                        </div>
                     </li>
                     )
             }

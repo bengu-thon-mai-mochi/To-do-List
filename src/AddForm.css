@@ -1,0 +1,47 @@
+.todo-addform-wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    padding: 70px;
+    border: 2px dashed blue;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin: 40px;
+}
+
+.todo-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+}
+
+.add-button-wrapper {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.todo-label {
+    font-size: 30px;
+    margin: 10px;
+    font-style: oblique;
+    text-transform: lowercase;
+}
+
+.todo-input,
+.date-picker-input {
+    font-size: 25px;
+    font-style: oblique;
+    color: salmon;
+    max-width: 70%;
+}
+
+.date-picker-input {
+    max-width: 70%;
+}
+
+.add-button {
+    font-size: 35px;
+    padding: 10px;
+    color: salmon; 
+}

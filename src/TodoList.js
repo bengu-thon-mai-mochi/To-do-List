@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import AddForm from './AddForm'
 import TodoItem from './TodoItem';
-import './TodoList.css';
+import './TodoList.css'
 
 const todoAPI = "https://gist.githubusercontent.com/benna100/391eee7a119b50bd2c5960ab51622532/raw";
 
@@ -26,7 +26,7 @@ class TodoList extends Component {
 
     handleAdd = () => {
         if(this.state.description === undefined ||  this.state.description === ""){
-            alert('please add todo');
+            alert('Please add something to-do!');
         } else {
             const newTodo = {
                 description: this.state.description,
@@ -137,7 +137,7 @@ class TodoList extends Component {
                         }
                     </ul>
                 ) : ( 
-                       <p>There's no to-dos on your list. Please add it by clicking button above.</p>
+                       <p className="todo-info">There's no to-dos on your list. Do you really have nothing to-do?  </p>
                 )}
             </>
         );
